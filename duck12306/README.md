@@ -1,29 +1,30 @@
-*Original idea comes from https://github.com/andelf/fuck12306. This repo forks it for extension and BUG Fixing*
 
 # Duck12306
 
-## Installation
+*Original idea comes from https://github.com/andelf/fuck12306. This repo forks it for extension and BUG Fixing*
 
-Install pip
+# Installation
+
+1. Install pip
 
 ```
 sudo apt-get install python-pip python-dev
 ```
 
-Install preresquites
+2. Install preresquites
 
 ```
 sudo apt-get install python-imaging
 sudo apt-get install libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev libwebp-dev
 ```
 
-Install Pillow
+3. Install Pillow
 
 ```
 sudo pip install pillow
 ```
 
-Install leptonica from http://www.leptonica.com/download.html
+4. Install leptonica from http://www.leptonica.com/download.html
 
 ```
 wget http://www.leptonica.com/source/leptonica-1.71.tar.gz
@@ -34,7 +35,7 @@ sudo make
 sudo make install
 ```
 
-Install tesseract from https://code.google.com/p/tesseract-ocr/
+5. Install tesseract from https://code.google.com/p/tesseract-ocr/
 
 ```
 wget https://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.02.02.tar.gz
@@ -46,7 +47,7 @@ sudo make install
 sudo ldconfig
 ```
 
-Copy trained data (English, Chinese) to tesseract
+6. Copy trained data (English, Chinese) to tesseract
 
 ```
 cd ~
@@ -57,7 +58,7 @@ tar -xvf tesseract-ocr-3.02.chi_sim.tar.gz
 sudo cp tesseract-ocr/tessdata/*.traineddata /usr/local/share/tessdata/
 ```
 
-Clone pytesseract and install
+7. Clone pytesseract and install
 
 ```
 cd ~
@@ -66,7 +67,7 @@ cd pytesseract/
 sudo python setup.py install
 ```
 
-Clone duck12306 and run it
+8. Clone duck12306 and run it
 
 ```
 cd ~
@@ -77,11 +78,11 @@ python duck12306.py
 
 Now you go!
 
-## Error handling
+# Error handling
 
-```
-IOError: decoder jpeg not available
-```
+
+ - IOError: decoder jpeg not available
+
 
 Install preresquites above
 Re-install Pillow
@@ -90,9 +91,9 @@ Re-install Pillow
 sudo pip install -I pillow
 ``` 
 
-```
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
-```
+
+- UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+
 
 Change python default encoding to utf8
 
@@ -100,15 +101,15 @@ Change python default encoding to utf8
 export PYTHONIOENCODING=utf8
 ```
 
-```
-TesseractError: (127, 'tesseract: error while loading shared libraries: libtesseract.so.3: cannot open shared object file: No such file or directory')
-```
+
+- TesseractError: (127, 'tesseract: error while loading shared libraries: libtesseract.so.3: cannot open shared object file: No such file or directory')
+
 
 see 'Install tesseract'
 
-```
-TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/eng.traineddata')
-```
+
+- TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/eng.traineddata')
+
 
 see 'Copy trained data (English, Chinese) to tesseract'
 
