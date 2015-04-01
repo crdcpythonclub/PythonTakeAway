@@ -81,7 +81,7 @@ Now you go!
 # Error handling
 
 
- - IOError: decoder jpeg not available
+ - `IOError: decoder jpeg not available`
 
 
 Install preresquites above
@@ -92,7 +92,7 @@ sudo pip install -I pillow
 ``` 
 
 
-- UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+- `UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)`
 
 
 Change python default encoding to utf8
@@ -102,13 +102,13 @@ export PYTHONIOENCODING=utf8
 ```
 
 
-- TesseractError: (127, 'tesseract: error while loading shared libraries: libtesseract.so.3: cannot open shared object file: No such file or directory')
+- `TesseractError: (127, 'tesseract: error while loading shared libraries: libtesseract.so.3: cannot open shared object file: No such file or directory')`
 
 
 see 'Install tesseract'
 
 
-- TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/eng.traineddata')
+- `TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/eng.traineddata')`
 
 
 see 'Copy trained data (English, Chinese) to tesseract'
