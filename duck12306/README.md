@@ -114,4 +114,19 @@
 	see 'Copy trained data (English, Chinese) to tesseract'
 
 
+# Additions
+
+## Tesseract
+
+Tesseract is an optical character recognition engine for various operating systems. It is free software, released under the Apache License, Version 2.0, and development has been sponsored by Google since 2006. Tesseract is considered one of the most accurate open source OCR engines currently available
+
+Leptonica is a pedagogically-oriented open source site containing software that is broadly useful for image processing and image analysis applications.
+
+## PIL and pillow
+
+Python Imaging Library (abbreviated as PIL) is a free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats. It is available for Windows, Mac OS X and Linux. 
+
+Development appears to be discontinued with the last commit to the PIL repository coming in 2011. Consequently, a successor project called Pillow has forked the PIL repository and added Python 3.x support. This fork has been adopted as a replacement for the original PIL in Linux distributions.
+
+
 

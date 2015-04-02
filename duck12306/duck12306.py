@@ -35,7 +35,7 @@ def pre_ocr_processing(im):
     im = im.convert("RGB")
     width, height = im.size
 
-    white = im.filter(ImageFilter.BLUR).filter(ImageFilter.MaxFilter(1))#here to pick up grey degree
+    white = im.filter(ImageFilter.BLUR).filter(ImageFilter.MaxFilter(5))#here to pick up grey degree
     grey = im.convert('L')
     impix = im.load()
     whitepix = white.load()
@@ -48,7 +48,7 @@ def pre_ocr_processing(im):
                                         255 + impix[x,y][2] - whitepix[x,y][2]))
 
     new_im = grey.copy()
-    binarize(new_im, 253)#here to binarize black and white
+    binarize(new_im, 225)#here to binarize black and white
     return new_im
 
 def binarize(im, thresh=120):
